@@ -4,6 +4,4 @@ for n, p in map(lambda x: [list(map(lambda a: int(a), z)) if i == 0 else int(z) 
         n[index] = abs(n[index] - n[len(n) - p])
     for index in range(p):
         n[index] = (n[index] + n[len(n) - p]) % 10
-    for val in n:
-        print(val, end="")
-    print()
+    print(*n, sep="")
